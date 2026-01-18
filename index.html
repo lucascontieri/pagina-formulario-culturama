@@ -14,8 +14,7 @@
             <form action="" method="get">
                 <!-- Indicando para o browser que todos os elementos representam
                 um conjunto de elementos que possuem relação entre si semanticamente -->
-                <fieldset>
-                    <!-- Dados Pessoais -->
+                <!-- <fieldset>
                     <legend>Dados Pessoais</legend>
                     <label for="userName">Nome</label>
                     <input type="text" name="userName" required>
@@ -30,12 +29,26 @@
                     <input type="email" name="userEmail" required>
                     <br>
                     <label for="userPhoneNumber">Telefone</label>
-                    <!-- Passando regras para o prenchimento do input de telefone, denominado de Pattern -->
                     <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
                         placeholder="DDD + número sem espaços ou hífen">
                     <br>
                     <label for="userImage">Upload de foto</label>
                     <input type="file" accept="image/*" name="userImage">
+                </fieldset> -->
+
+                <!-- Criando uma nova sessão do formulário -->
+                <fieldset>
+                    <legend>Perfil</legend>
+
+                    <p>Sexo:</p>
+                    <input type="radio" name="userGender" value="Feminino">
+                    <label for="userGender">Feminino</label>
+
+                    <input type="radio" name="userGender" value="Masculino">
+                    <label for="userGender">Masculino</label>
+
+                    <input type="radio" name="userGender" value="notInformed">
+                    <label for="userGender">Prefiro não informar</label>
                 </fieldset>
 
                 <br>
